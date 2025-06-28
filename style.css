@@ -4,8 +4,9 @@ body {
 
 /* Hero Section Styling */
 .hero-section {
+  min-height: 85vh;
   background-color: #eef2ff; /* Indigo-50 */
-  padding-top: 5rem;
+  padding-top: 0rem;
   padding-bottom: 5rem;
 }
 
@@ -67,4 +68,35 @@ body {
 }
 .feature-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scrolling-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-content {
+  display: inline-flex;
+  gap: 1rem;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+}
+
+/* Animation moves content left by 50% (half its width) */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
