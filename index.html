@@ -59,9 +59,16 @@
 
  <!-- Hero Section -->
 <section 
-  class="hero-section relative min-h-[100vh] flex items-center overflow-hidden bg-cover bg-no-repeat bg-center"
-  style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' viewBox=\'0 0 1600 800\'><rect fill=\'%238BB2FF\' width=\'1600\' height=\'800\'/><g fill-opacity=\'1\'><path fill=\'%2398bbff\' d=\'M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z\'/><path fill=\'%23a4c4ff\' d=\'M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z\'/><path fill=\'%23b1ccff\' d=\'M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z\'/><path fill=\'%23bdd5ff\' d=\'M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z\'/><path fill=\'%23CADDFF\' d=\'M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z\'/><path fill=\'%23d3e5ff\' d=\'M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z\'/><path fill=\'%23dcecff\' d=\'M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z\'/><path fill=\'%23e6f2ff\' d=\'M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z\'/><path fill=\'%23eff7ff\' d=\'M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z\'/><path fill=\'%23F8FCFF\' d=\'M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z\'/></g></svg>');">
-  <div class="container mx-auto px-4 sm:px-8 md:pl-20 md:pr-32 relative w-full">
+  class="hero-section relative min-h-[100vh] flex items-center overflow-hidden bg-no-repeat bg-center bg-cover"
+  style="
+    background-color: #130116;
+    background-image: url('src/background.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  "
+>
+<div class="container mx-auto px-4 sm:px-8 md:pl-20 md:pr-32 relative w-full">
     
     <!-- Left Arrow -->
     <button id="prevSlide" class="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 hover:bg-indigo-100 rounded-full p-2 shadow transition">
@@ -83,10 +90,10 @@
         <!-- Slide 1 -->
         <div class="hero-slide opacity-100 transition-all duration-700 flex flex-col-reverse md:flex-row items-center h-full">
           <div class="flex-1 flex flex-col items-center md:items-start justify-center px-2 sm:px-4 mt-4 md:mt-0">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2 text-indigo-700 opacity-0 translate-y-6 transition-all duration-700 delay-100 text-center md:text-left">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2 text-white opacity-0 translate-y-6 transition-all duration-700 delay-100 text-center md:text-left">
               Standout Business Cards
             </h1>
-            <p class="text-base sm:text-lg text-gray-700 mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-200 text-center md:text-left">
+            <p class="text-base sm:text-lg text-white mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-200 text-center md:text-left">
               Premium paper, sharp designs, fast delivery
             </p>
             <a href="#gallery" class="btn-primary px-6 py-2 rounded-full bg-indigo-600 text-white font-semibold shadow-lg opacity-0 translate-y-6 transition-all duration-700 delay-300">
@@ -101,10 +108,10 @@
         <!-- Slide 2 -->
         <div class="hero-slide opacity-0 pointer-events-none absolute inset-0 transition-all duration-700 flex flex-col-reverse md:flex-row items-center h-full" data-slide="1">
           <div class="flex-1 flex flex-col items-center md:items-start justify-center px-2 sm:px-4 mt-4 md:mt-0">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2 text-indigo-700 opacity-0 translate-y-6 transition-all duration-700 delay-100 text-center md:text-left">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2 text-white opacity-0 translate-y-6 transition-all duration-700 delay-100 text-center md:text-left">
               Menu & Flyers That Sell
             </h1>
-            <p class="text-base sm:text-lg text-gray-700 mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-200 text-center md:text-left">
+            <p class="text-base sm:text-lg text-white mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-200 text-center md:text-left">
               Creative layout and quality prints for restaurants and events
             </p>
             <a href="#gallery" class="btn-primary px-6 py-2 rounded-full bg-indigo-600 text-white font-semibold shadow-lg opacity-0 translate-y-6 transition-all duration-700 delay-300">
@@ -119,10 +126,10 @@
         <!-- Slide 3 -->
         <div class="hero-slide opacity-0 pointer-events-none absolute inset-0 transition-all duration-700 flex flex-col-reverse md:flex-row items-center h-full" data-slide="2">
           <div class="flex-1 flex flex-col items-center md:items-start justify-center px-2 sm:px-4 mt-4 md:mt-0">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2 text-indigo-700 opacity-0 translate-y-6 transition-all duration-700 delay-100 text-center md:text-left">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2 text-white opacity-0 translate-y-6 transition-all duration-700 delay-100 text-center md:text-left">
               Logos That Speak for You
             </h1>
-            <p class="text-base sm:text-lg text-gray-700 mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-200 text-center md:text-left">
+            <p class="text-base sm:text-lg text-white mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-200 text-center md:text-left">
               Custom logos that define your brand identity
             </p>
             <a href="#gallery" class="btn-primary px-6 py-2 rounded-full bg-indigo-600 text-white font-semibold shadow-lg opacity-0 translate-y-6 transition-all duration-700 delay-300">
@@ -218,194 +225,125 @@
 
   <!-- Our Gallery Section -->
   <div 
-  class="py-16 bg-white bg-no-repeat bg-cover bg-fixed"
-  style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 2000 1500\'%3E%3Cdefs%3E%3Crect stroke=\'%23ffffff\' stroke-width=\'.5\' width=\'1\' height=\'1\' id=\'s\'/%3E%3Cpattern id=\'a\' width=\'3\' height=\'3\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cuse fill=\'%23fcfcfc\' href=\'%23s\' y=\'2\'/%3E%3Cuse fill=\'%23fcfcfc\' href=\'%23s\' x=\'1\' y=\'2\'/%3E%3Cuse fill=\'%23fafafa\' href=\'%23s\' x=\'2\' y=\'2\'/%3E%3Cuse fill=\'%23fafafa\' href=\'%23s\'/%3E%3Cuse fill=\'%23f7f7f7\' href=\'%23s\' x=\'2\'/%3E%3Cuse fill=\'%23f7f7f7\' href=\'%23s\' x=\'1\' y=\'1\'/%3E%3C/pattern%3E%3Cpattern id=\'b\' width=\'7\' height=\'11\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cg fill=\'%23f5f5f5\'%3E%3Cuse href=\'%23s\'/%3E%3Cuse href=\'%23s\' y=\'5\' /%3E%3Cuse href=\'%23s\' x=\'1\' y=\'10\'/%3E%3Cuse href=\'%23s\' x=\'2\' y=\'1\'/%3E%3Cuse href=\'%23s\' x=\'2\' y=\'4\'/%3E%3Cuse href=\'%23s\' x=\'3\' y=\'8\'/%3E%3Cuse href=\'%23s\' x=\'4\' y=\'3\'/%3E%3Cuse href=\'%23s\' x=\'4\' y=\'7\'/%3E%3Cuse href=\'%23s\' x=\'5\' y=\'2\'/%3E%3Cuse href=\'%23s\' x=\'5\' y=\'6\'/%3E%3Cuse href=\'%23s\' x=\'6\' y=\'9\'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id=\'h\' width=\'5\' height=\'13\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cg fill=\'%23f5f5f5\'%3E%3Cuse href=\'%23s\' y=\'5\'/%3E%3Cuse href=\'%23s\' y=\'8\'/%3E%3Cuse href=\'%23s\' x=\'1\' y=\'1\'/%3E%3Cuse href=\'%23s\' x=\'1\' y=\'9\'/%3E%3Cuse href=\'%23s\' x=\'1\' y=\'12\'/%3E%3Cuse href=\'%23s\' x=\'2\'/%3E%3Cuse href=\'%23s\' x=\'2\' y=\'4\'/%3E%3Cuse href=\'%23s\' x=\'3\' y=\'2\'/%3E%3Cuse href=\'%23s\' x=\'3\' y=\'6\'/%3E%3Cuse href=\'%23s\' x=\'3\' y=\'11\'/%3E%3Cuse href=\'%23s\' x=\'4\' y=\'3\'/%3E%3Cuse href=\'%23s\' x=\'4\' y=\'7\'/%3E%3Cuse href=\'%23s\' x=\'4\' y=\'10\'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id=\'c\' width=\'17\' height=\'13\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cg fill=\'%23f2f2f2\'%3E%3Cuse href=\'%23s\' y=\'11\'/%3E%3Cuse href=\'%23s\' x=\'2\' y=\'9\'/%3E%3Cuse href=\'%23s\' x=\'5\' y=\'12\'/%3E%3Cuse href=\'%23s\' x=\'9\' y=\'4\'/%3E%3Cuse href=\'%23s\' x=\'12\' y=\'1\'/%3E%3Cuse href=\'%23s\' x=\'16\' y=\'6\'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id=\'d\' width=\'19\' height=\'17\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cg fill=\'%23ffffff\'%3E%3Cuse href=\'%23s\' y=\'9\'/%3E%3Cuse href=\'%23s\' x=\'16\' y=\'5\'/%3E%3Cuse href=\'%23s\' x=\'14\' y=\'2\'/%3E%3Cuse href=\'%23s\' x=\'11\' y=\'11\'/%3E%3Cuse href=\'%23s\' x=\'6\' y=\'14\'/%3E%3C/g%3E%3Cg fill=\'%23efefef\'%3E%3Cuse href=\'%23s\' x=\'3\' y=\'13\'/%3E%3Cuse href=\'%23s\' x=\'9\' y=\'7\'/%3E%3Cuse href=\'%23s\' x=\'13\' y=\'10\'/%3E%3Cuse href=\'%23s\' x=\'15\' y=\'4\'/%3E%3Cuse href=\'%23s\' x=\'18\' y=\'1\'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id=\'e\' width=\'47\' height=\'53\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cg fill=\'%23F60\'%3E%3Cuse href=\'%23s\' x=\'2\' y=\'5\'/%3E%3Cuse href=\'%23s\' x=\'16\' y=\'38\'/%3E%3Cuse href=\'%23s\' x=\'46\' y=\'42\'/%3E%3Cuse href=\'%23s\' x=\'29\' y=\'20\'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id=\'f\' width=\'59\' height=\'71\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cg fill=\'%23F60\'%3E%3Cuse href=\'%23s\' x=\'33\' y=\'13\'/%3E%3Cuse href=\'%23s\' x=\'27\' y=\'54\'/%3E%3Cuse href=\'%23s\' x=\'55\' y=\'55\'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id=\'g\' width=\'139\' height=\'97\' patternUnits=\'userSpaceOnUse\' patternTransform=\'scale(50) translate(-980 -735)\'%3E%3Cg fill=\'%23F60\'%3E%3Cuse href=\'%23s\' x=\'11\' y=\'8\'/%3E%3Cuse href=\'%23s\' x=\'51\' y=\'13\'/%3E%3Cuse href=\'%23s\' x=\'17\' y=\'73\'/%3E%3Cuse href=\'%23s\' x=\'99\' y=\'57\'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23a)\' width=\'100%25\' height=\'100%25\'/%3E%3Crect fill=\'url(%23b)\' width=\'100%25\' height=\'100%25\'/%3E%3Crect fill=\'url(%23h)\' width=\'100%25\' height=\'100%25\'/%3E%3Crect fill=\'url(%23c)\' width=\'100%25\' height=\'100%25\'/%3E%3Crect fill=\'url(%23d)\' width=\'100%25\' height=\'100%25\'/%3E%3Crect fill=\'url(%23e)\' width=\'100%25\' height=\'100%25\'/%3E%3Crect fill=\'url(%23f)\' width=\'100%25\' height=\'100%25\'/%3E%3Crect fill=\'url(%23g)\' width=\'100%25\' height=\'100%25\'/%3E%3C/svg%3E');">
+  class="py-10 bg-white bg-no-repeat bg-cover bg-fixed"
+ style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' viewBox=\'0 0 1600 800\'><rect fill=\'%238BB2FF\' width=\'1600\' height=\'800\'/><g fill-opacity=\'1\'><path fill=\'%2398bbff\' d=\'M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z\'/><path fill=\'%23a4c4ff\' d=\'M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z\'/><path fill=\'%23b1ccff\' d=\'M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z\'/><path fill=\'%23bdd5ff\' d=\'M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z\'/><path fill=\'%23CADDFF\' d=\'M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z\'/><path fill=\'%23d3e5ff\' d=\'M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z\'/><path fill=\'%23dcecff\' d=\'M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z\'/><path fill=\'%23e6f2ff\' d=\'M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z\'/><path fill=\'%23eff7ff\' d=\'M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z\'/><path fill=\'%23F8FCFF\' d=\'M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z\'/></g></svg>');">
 
-  <section id="gallery" class="py-10 ">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-indigo-700 mb-10 text-center" data-aos="fade-up">Our Products</h2>
+  <section id="gallery" class="py-0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-indigo-700 mb-5 text-center" data-aos="fade-up">Our Products</h2>
 
-      <div id="gallery-content" class="overflow-hidden transition-all duration-500" style="max-height: 1200px;">
-        <!-- Category: Business Cards -->
-        <div class="mb-14" data-aos="fade-up">
-          <h3 class="text-xl font-bold text-indigo-700 mb-4">Business Cards</h3>
-          <div class="relative group">
-            <div class="swiper business-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="src/BC1.png" alt="Business Card 1"
-                    class="rounded-2xl shadow-xl border-4 border-white w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="src/BC4.png" alt="Business Card 2"
-                    class="rounded-2xl shadow-xl border-4 border-white w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="src/BC3.png" alt="Business Card 3"
-                    class="rounded-2xl shadow-xl border-4 border-white w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="src/BC2.png" alt="Business Card 4"
-                    class="rounded-2xl shadow-xl border-4 border-white w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" />
-                </div>
-              </div>
-              <!-- Navigation -->
-              <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
-              <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
+    <div id="gallery-content" class="overflow-hidden transition-all duration-500" style="max-height: 1000px;">
+
+      <!-- Business Cards -->
+      <div class="mb-5" data-aos="fade-up">
+        <h3 class="text-xl font-bold text-indigo-700 mb-4">Business Cards</h3>
+        <div class="relative group">
+          <div class="swiper business-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="src/BC1.png" alt="Business Card 1" class="rounded-2xl border-4 border-white shadow-xl w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" /></div>
+              <div class="swiper-slide"><img src="src/BC4.png" alt="Business Card 2" class="rounded-2xl border-4 border-white shadow-xl w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" /></div>
+              <div class="swiper-slide"><img src="src/BC3.png" alt="Business Card 3" class="rounded-2xl border-4 border-white shadow-xl w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" /></div>
+              <div class="swiper-slide"><img src="src/BC2.png" alt="Business Card 4" class="rounded-2xl border-4 border-white shadow-xl w-full h-44 object-cover transition-transform duration-300 hover:scale-110 hover:shadow-indigo-200" /></div>
             </div>
-          </div>
-        </div>
-
-              <div class="mb-14 w-full" data-aos="fade-up" data-aos-delay="300">
-    <h3 class="text-xl font-bold text-indigo-700 mb-4">Logo Designs</h3>
-    <div class="relative group">
-    <div class="swiper logo-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="src/LD5.jpg" alt="Logo 1"
-            class="rounded-xl shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-        <div class="swiper-slide">
-          <img src="src/LD2.jpg" alt="Logo 2"
-            class="rounded-xl shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-        <div class="swiper-slide">
-          <img src="src/LD3.jpg" alt="Logo 3"
-            class="rounded-xl shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-        <div class="swiper-slide">
-          <img src="src/Ld4.jpg" alt="Logo 4"
-            class="rounded-xl shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-        <div class="swiper-slide">
-          <img src="src/LD5.jpg" alt="Logo 1"
-            class="rounded-xl shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-      </div>
-      <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
-      <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
-    </div>
-    </div>
-    </div>
-
-        <!-- Category: T-Shirt Printing< -->
-        <div class="mb-14" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-xl font-bold text-indigo-700 mb-4">T-Shirt Printing</h3>
-          <div class="relative group">
-            <div class="swiper menu-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="src/TD4.png" alt="Menu 1"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="src/TD1.png" alt="Menu 2"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="src/TD3.jpg" alt="Menu 3"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="src/TD5.png" alt="Menu 4"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-              </div>
-              <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
-              <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
-            </div>
-          </div>
-        </div>
-        
-        
-        <!-- Category: Menus & Flyers -->
-    <div class="mb-10  mx-auto" data-aos="fade-up" data-aos-delay="400">
-    <h3 class="text-xl font-bold text-indigo-700 mb-4">Menus & Flyers</h3>
-   <div class="relative group">
-    <div class="swiper menu-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="src/MF1.png" alt="Other 1"
-            class="rounded-xl shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-        <div class="swiper-slide">
-          <img src="src/MF2.png" alt="Other 2"
-            class="rounded-xl shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-        <div class="swiper-slide">
-          <img src="src/MF3.png" alt="Other 3"
-            class="rounded-xl shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-        <div class="swiper-slide">
-          <img src="src/MF4.png" alt="Other 4"
-            class="rounded-xl shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-        </div>
-      </div>
-      <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
-      <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
-    </div>
-    </div>
-    </div>
-
-        <!-- Category: Flex & Stickers -->
-        <div class="mb-14" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-bold text-indigo-700 mb-4">Flex & Stickers</h3>
-          <div class="relative group">
-            <div class="swiper flex-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="src/FS1.png" alt="Flex 1"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Flex 2"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Flex 3"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Flex 4"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-              </div>
-              <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
-              <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
-            </div>
-          </div>
-        </div>
-<!-- Category: Others -->
-
-        <div class="mt-10 mb-10" data-aos="fade-up" data-aos-delay="400">
-         <h3 class="text-xl font-bold text-indigo-700 mb-4">Cup Designs</h3>
-          <div class="relative group">
-            <div class="swiper other-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Other 1"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Other 2"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Other 3"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Other 4"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-              </div>
-              <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
-              <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
-            </div>
+            <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
+            <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
           </div>
         </div>
       </div>
-         
+
+      <!-- Logo Designs -->
+      <div class="mb-5 w-full" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-bold text-indigo-700 mb-4">Logo Designs</h3>
+        <div class="relative group">
+          <div class="swiper logo-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="src/LD5.jpg" alt="Logo 1" class="rounded-2xl border-4 border-white shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/LD2.jpg" alt="Logo 2" class="rounded-2xl border-4 border-white shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/LD3.jpg" alt="Logo 3" class="rounded-2xl border-4 border-white shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/Ld4.jpg" alt="Logo 4" class="rounded-2xl  border-4 border-white shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/LD5.jpg" alt="Logo 1" class="rounded-2xl border-4 border-white shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/LD3.jpg" alt="Logo 3" class="rounded-2xl border-4 border-white shadow-lg w-60 h-40 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+            </div>
+            <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
+            <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T-Shirt Printing -->
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-bold text-indigo-700 mb-4">T-Shirt Printing</h3>
+        <div class="relative group">
+          <div class="swiper other-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="src/TD4.png" alt="Menu 1" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/TD1.png" alt="Menu 2" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/TD3.jpg" alt="Menu 3" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/TD5.png" alt="Menu 4" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+            </div>
+            <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
+            <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menus & Flyers -->
+      <div class="mb-5 mx-auto" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-xl font-bold text-indigo-700 mb-4">Menus & Flyers</h3>
+        <div class="relative group">
+          <div class="swiper menu-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="src/MF1.png" alt="MF1" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/MF2.png" alt="MF2" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/MF3.png" alt="MF3" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/MF4.png" alt="MF4" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="src/MF1.png" alt="MF1" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+
+            </div>
+            <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
+            <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flex & Stickers -->
+      <div class="mb-5">
+        <h3 class="text-xl font-bold text-indigo-700 mb-4">Flex & Stickers</h3>
+        <div class="relative group">
+          <div class="swiper flex-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="src/FS1.png" alt="Flex 1" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Flex 2" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Flex 3" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Flex 4" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+            </div>
+            <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
+            <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cup Designs -->
+      <div class="mb-5">
+        <h3 class="text-xl font-bold text-indigo-700 mb-4">Cup Designs</h3>
+        <div class="relative group">
+          <div class="swiper other-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Cup 1" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Cup 2" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Cup 3" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+              <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Cup 4" class="rounded-xl border-4 border-white shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
+            </div>
+            <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
+            <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <!-- View Full Gallery Button -->
       <div class="flex justify-center mt-8" data-aos="fade-up" data-aos-delay="500">
@@ -420,6 +358,60 @@
 
    </section>
  </div>
+
+ <section class="bg-gray-800 py-10 w-full">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8 px-4">
+    <!-- Card 1 -->
+    <div class="flex items-center gap-3">
+      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M16 3v4M8 3v4M3 11h18" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 15h.01M11 15h.01M15 15h.01" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <div>
+        <div class="text-gray-200 font-semibold text-base">SPECIAL GIFT CARDS</div>
+        <div class="text-gray-400 text-sm">Give the perfect gift</div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="flex items-center gap-3">
+      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <rect x="1" y="7" width="22" height="10" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
+        <circle cx="7" cy="17" r="2" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17" cy="17" r="2" stroke="currentColor" stroke-width="2"/>
+        <path d="M5 7V5a2 2 0 012-2h10a2 2 0 012 2v2" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <div>
+        <div class="text-gray-200 font-semibold text-base">FREE SHIPPING</div>
+        <div class="text-gray-400 text-sm">On orders over $99</div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="flex items-center gap-3">
+      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <div>
+        <div class="text-gray-200 font-semibold text-base">ORDER ONLINE</div>
+        <div class="text-gray-400 text-sm">Hours : 8am - 11pm</div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="flex items-center gap-3">
+      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 17v-1M12 7v6" stroke="currentColor" stroke-width="2"/>
+        <path d="M9 13h6" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <div>
+        <div class="text-gray-200 font-semibold text-base">SHOP AND SAVE</div>
+        <div class="text-gray-400 text-sm">for all spices &amp; herbs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
    <div style="background-color: #7ABFFF;
          background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 2000 1500\'%3E%3Cdefs%3E%3CradialGradient id=\'a\' gradientUnits=\'objectBoundingBox\'%3E%3Cstop offset=\'0\' stop-color=\'%23FFFFFF\'/%3E%3Cstop offset=\'1\' stop-color=\'%237ABFFF\'/%3E%3C/radialGradient%3E%3ClinearGradient id=\'b\' gradientUnits=\'userSpaceOnUse\' x1=\'0\' y1=\'750\' x2=\'1550\' y2=\'750\'%3E%3Cstop offset=\'0\' stop-color=\'%23bddfff\'/%3E%3Cstop offset=\'1\' stop-color=\'%237ABFFF\'/%3E%3C/linearGradient%3E%3Cpath id=\'s\' fill=\'url(%23b)\' d=\'M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-279.5 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z\'/%3E%3Cg id=\'g\'%3E%3Cuse href=\'%23s\' transform=\'scale(0.12) rotate(60)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.2) rotate(10)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.25) rotate(40)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.3) rotate(-20)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.4) rotate(-30)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.5) rotate(20)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.6) rotate(60)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.7) rotate(10)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.835) rotate(-40)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(0.9) rotate(40)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(1.05) rotate(25)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(1.2) rotate(8)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(1.333) rotate(-60)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(1.45) rotate(-30)\'/%3E%3Cuse href=\'%23s\' transform=\'scale(1.6) rotate(10)\'/%3E%3C/g%3E%3C/defs%3E%3Cg %3E%3Cg transform=\'\'%3E%3Ccircle fill=\'url(%23a)\' r=\'3000\'/%3E%3Cg opacity=\'0.5\'%3E%3Ccircle fill=\'url(%23a)\' r=\'2000\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'1800\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'1700\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'1651\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'1450\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'1250\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'1175\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'900\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'750\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'500\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'380\'/%3E%3Ccircle fill=\'url(%23a)\' r=\'250\'/%3E%3C/g%3E%3Cg transform=\'\'%3E%3Cuse href=\'%23g\' transform=\'rotate(10)\'/%3E%3Cuse href=\'%23g\' transform=\'rotate(120)\'/%3E%3Cuse href=\'%23g\' transform=\'rotate(240)\'/%3E%3C/g%3E%3Ccircle fill-opacity=\'0.59\' fill=\'url(%23a)\' r=\'3000\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
          background-attachment: fixed;
@@ -483,90 +475,9 @@
     </div>
   </section>
 
-  <section class="bg-gray-800 py-6 w-full">
-  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8 px-4">
-    <!-- Card 1 -->
-    <div class="flex items-center gap-3">
-      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
-        <path d="M16 3v4M8 3v4M3 11h18" stroke="currentColor" stroke-width="2"/>
-        <path d="M7 15h.01M11 15h.01M15 15h.01" stroke="currentColor" stroke-width="2"/>
-      </svg>
-      <div>
-        <div class="text-gray-200 font-semibold text-base">SPECIAL GIFT CARDS</div>
-        <div class="text-gray-400 text-sm">Give the perfect gift</div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="flex items-center gap-3">
-      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <rect x="1" y="7" width="22" height="10" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
-        <circle cx="7" cy="17" r="2" stroke="currentColor" stroke-width="2"/>
-        <circle cx="17" cy="17" r="2" stroke="currentColor" stroke-width="2"/>
-        <path d="M5 7V5a2 2 0 012-2h10a2 2 0 012 2v2" stroke="currentColor" stroke-width="2"/>
-      </svg>
-      <div>
-        <div class="text-gray-200 font-semibold text-base">FREE SHIPPING</div>
-        <div class="text-gray-400 text-sm">On orders over $99</div>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="flex items-center gap-3">
-      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-        <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/>
-      </svg>
-      <div>
-        <div class="text-gray-200 font-semibold text-base">ORDER ONLINE</div>
-        <div class="text-gray-400 text-sm">Hours : 8am - 11pm</div>
-      </div>
-    </div>
-    <!-- Card 4 -->
-    <div class="flex items-center gap-3">
-      <svg class="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" stroke="currentColor" stroke-width="2"/>
-        <path d="M12 17v-1M12 7v6" stroke="currentColor" stroke-width="2"/>
-        <path d="M9 13h6" stroke="currentColor" stroke-width="2"/>
-      </svg>
-      <div>
-        <div class="text-gray-200 font-semibold text-base">SHOP AND SAVE</div>
-        <div class="text-gray-400 text-sm">for all spices &amp; herbs</div>
-      </div>
-    </div>
-  </div>
-</section>
+  
 
-  <!-- Category: Others
-        <div class="mt-10 mb-10" data-aos="fade-up" data-aos-delay="400">
-          <h3 class="text-2xl md:text-3xl font-bold text-center  bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-pink-500 mb-8">
-  Special Products
-</h3>
-          <div class="relative group">
-            <div class="swiper special-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Other 1"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Other 2"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Other 3"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Other 4"
-                    class="rounded-xl shadow-lg w-full h-44 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" />
-                </div>
-              </div>
-              <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
-              <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
-            </div>
-          </div>
-        </div>
-      </div>-->
+  
 
       <section id="special-products" class="py-10 ">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -825,7 +736,7 @@
     const viewBtn = document.getElementById('viewFullGalleryBtn');
     const lessBtn = document.getElementById('showLessGalleryBtn');
     const gallery = document.getElementById('gallery-content');
-    const initialMaxHeight = '1200px';
+    const initialMaxHeight = '1000px';
 
    viewBtn.addEventListener('click', function () {
     gallery.style.maxHeight = '5000px';

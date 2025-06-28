@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 2.2,
     spaceBetween: 20,
     navigation: { nextEl: '.menu-swiper .swiper-button-next', prevEl: '.menu-swiper .swiper-button-prev' },
-    breakpoints: { 640: { slidesPerView: 2.2 }, 1024: { slidesPerView: 3.2 } }
+    breakpoints: { 640: { slidesPerView: 3.2 }, 1024: { slidesPerView: 4.2 } }
   });
   new Swiper('.flex-swiper', {
     slidesPerView: 1.2,
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 2.2,
     spaceBetween: 20,
     navigation: { nextEl: '.logo-swiper .swiper-button-next', prevEl: '.logo-swiper .swiper-button-prev' },
-    breakpoints: { 640: { slidesPerView: 2.2 }, 1024: { slidesPerView: 4.2 } }
+    breakpoints: { 640: { slidesPerView: 3.2 }, 1024: { slidesPerView: 5.2 } }
   });
   new Swiper('.other-swiper', {
     slidesPerView: 1.2,

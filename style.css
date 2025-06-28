@@ -4,6 +4,7 @@ body {
 
 /* Hero Section Styling */
 .hero-section {
+  width: 100%;
   min-height: 85vh;
   background-color: #eef2ff; /* Indigo-50 */
   padding-top: 0rem;
