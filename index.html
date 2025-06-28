@@ -11,7 +11,6 @@
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body class="text-gray-800">
-<!-- ...existing code... -->
   <!-- Header -->
   <header class="shadow-md bg-white sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -297,8 +296,6 @@
               <div class="swiper-slide"><img src="src/MF2.png" alt="MF2" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
               <div class="swiper-slide"><img src="src/MF3.png" alt="MF3" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
               <div class="swiper-slide"><img src="src/MF4.png" alt="MF4" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
-              <div class="swiper-slide"><img src="src/MF1.png" alt="MF1" class="rounded-xl border-4 border-white shadow-lg w-full h-[22rem] object-cover transition-transform duration-300 hover:scale-105 hover:shadow-indigo-200 hover:shadow-2xl hover:bg-white" /></div>
-
             </div>
             <div class="swiper-button-prev opacity-80 group-hover:opacity-100 transition"></div>
             <div class="swiper-button-next opacity-80 group-hover:opacity-100 transition"></div>
@@ -712,7 +709,14 @@
    </div>
 
    <div class="fixed top-1/2 left-4 z-50 flex flex-col space-y-4 social-float">
-    <a href="https://www.facebook.com/share/14E2M1o81P6/?mibextid=wwXIfr" target="_blank" rel="noopener" class="bg-white shadow-lg rounded-full p-3 hover:bg-indigo-100 transition flex items-center justify-center">
+   <a href="https://www.facebook.com/share/14E2M1o81P6/?mibextid=wwXIfr" target="_blank" rel="noopener"
+   class="hidden bg-white shadow-lg rounded-full p-3 hover:bg-indigo-100 transition flex items-center justify-center">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg"
+       alt="Facebook"
+       class="w-6 h-6"
+       style="filter: invert(27%) sepia(99%) saturate(7497%) hue-rotate(221deg) brightness(93%) contrast(101%);" />
+</a>
+   <a href="https://www.facebook.com/share/14E2M1o81P6/?mibextid=wwXIfr" target="_blank" rel="noopener" class="bg-white shadow-lg rounded-full p-3 hover:bg-indigo-100 transition flex items-center justify-center">
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook" class="w-6 h-6" style="filter: invert(27%) sepia(99%) saturate(7497%) hue-rotate(221deg) brightness(93%) contrast(101%);" />
    </a>
     <a href="https://wa.me/971553883409" target="_blank" rel="noopener" class="bg-white shadow-lg rounded-full p-3 hover:bg-indigo-100 transition flex items-center justify-center">
@@ -723,129 +727,10 @@
     </a>
     </div>
    </div>
-    <script>
-   // Show full gallery on button click
-    document.getElementById('viewFullGalleryBtn').addEventListener('click', function () {
-    var gallery = document.getElementById('gallery-content');
-    gallery.style.maxHeight = '5000px'; // Large enough for all content
-    this.style.display = 'none';
-   });
-   </script>
 
-    <script>
-    const viewBtn = document.getElementById('viewFullGalleryBtn');
-    const lessBtn = document.getElementById('showLessGalleryBtn');
-    const gallery = document.getElementById('gallery-content');
-    const initialMaxHeight = '1000px';
-
-   viewBtn.addEventListener('click', function () {
-    gallery.style.maxHeight = '5000px';
-    viewBtn.style.display = 'none';
-    lessBtn.style.display = 'inline-block';
-    });
-
-    lessBtn.addEventListener('click', function () {
-    gallery.style.maxHeight = initialMaxHeight;
-    lessBtn.style.display = 'none';
-    viewBtn.style.display = 'inline-block';
-    gallery.scrollIntoView({ behavior: 'smooth' });
-    });
-   </script>
-
-   <script>
-    // Hide fade if not scrollable
-    document.querySelectorAll('.swiper-fade-mask').forEach(function(maskDiv) {
-    const swiperEl = maskDiv.querySelector('.swiper');
-    if (!swiperEl) return;
-    const swiperInstance = swiperEl.swiper;
-    function updateFade() {
-      if (!swiperInstance) return;
-      let slidesPerView = swiperInstance.params.slidesPerView;
-      if (typeof slidesPerView === 'string' && slidesPerView === 'auto') slidesPerView = 1;
-      if (swiperInstance.slides.length <= slidesPerView) {
-        maskDiv.classList.add('no-fade');
-      } else {
-        maskDiv.classList.remove('no-fade');
-      }
-    }
-    if (swiperInstance) {
-      swiperInstance.on('resize', updateFade);
-      swiperInstance.on('init', updateFade);
-      updateFade();
-    }
-    });
-    </script>
-
-    <script>
-    // Fade out floating social buttons when contact section is in view
-   document.addEventListener('DOMContentLoaded', function () {
-    const socialFloat = document.querySelector('.social-float');
-    const contactSection = document.getElementById('about');
-    if (!socialFloat || !contactSection) return;
-
-    function checkFade() {
-      const rect = contactSection.getBoundingClientRect();
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      // If the contact section is at least halfway visible
-      if (rect.top < windowHeight / 2 && rect.bottom > 0) {
-        socialFloat.style.opacity = '0';
-        socialFloat.style.pointerEvents = 'none';
-        socialFloat.style.transition = 'opacity 0.5s';
-      } else {
-        socialFloat.style.opacity = '1';
-        socialFloat.style.pointerEvents = '';
-        socialFloat.style.transition = 'opacity 0.5s';
-      }
-    }
-
-    window.addEventListener('scroll', checkFade, { passive: true });
-    window.addEventListener('resize', checkFade);
-    checkFade();
-   });
-   </script>
-
-    <!-- Animation styles -->
-      <style>
-      @keyframes fade-in-up {
-     0% { opacity: 0; transform: translateY(40px);}
-      100% { opacity: 1; transform: translateY(0);}
-    }
-    .animate-fade-in-up {
-      animation: fade-in-up 1.2s cubic-bezier(.4,0,.2,1) both;
-      }
-      @keyframes bounce-slow {
-      0%, 100% { transform: translateY(0);}
-     50% { transform: translateY(12px);}
-      }
-      .animate-bounce-slow {
-       animation: bounce-slow 2.2s infinite;
-      }
-
-      </style>
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
-      <!-- Social Media Floating Buttons -->
-     <style>
-     @media (max-width: 768px) {
-    .social-float {
-      top: auto !important;
-      left:  50% !important;
-      bottom: 20px !important;
-      transform: translateX(-50%) !important;
-      flex-direction: row !important;
-      gap: 1rem !important;
-    }
-    .social-float a {
-      padding: 0.5rem !important;
-    }
-    .social-float img {
-      width: 1.5rem !important;
-      height: 1.5rem !important;
-    }
-     }
-    </style>
 
     </body>
      </html>

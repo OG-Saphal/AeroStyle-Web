@@ -101,3 +101,35 @@ body {
     transform: translateX(-50%);
   }
 }
+@media (max-width: 768px) {
+    .social-float {
+      top: auto !important;
+      left:  50% !important;
+      bottom: 10px !important;
+      transform: translateX(-50%) !important;
+      flex-direction: row !important;
+      gap: 1rem !important;
+    }
+    .social-float a {
+      padding: 0.5rem !important;
+    }
+    .social-float img {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+     }
+
+     @keyframes fade-in-up {
+     0% { opacity: 0; transform: translateY(40px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 1.2s cubic-bezier(.4,0,.2,1) both;
+      }
+      @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0);}
+     50% { transform: translateY(12px);}
+      }
+      .animate-bounce-slow {
+       animation: bounce-slow 2.2s infinite;
+      }

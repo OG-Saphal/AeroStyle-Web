@@ -184,3 +184,75 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// Fade out floating social buttons when contact section is in view
+   document.addEventListener('DOMContentLoaded', function () {
+    const socialFloat = document.querySelector('.social-float');
+    const contactSection = document.getElementById('about');
+    if (!socialFloat || !contactSection) return;
+
+    function checkFade() {
+      const rect = contactSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      // If the contact section is at least halfway visible
+      if (rect.top < windowHeight / 2 && rect.bottom > 0) {
+        socialFloat.style.opacity = '0';
+        socialFloat.style.pointerEvents = 'none';
+        socialFloat.style.transition = 'opacity 0.5s';
+      } else {
+        socialFloat.style.opacity = '1';
+        socialFloat.style.pointerEvents = '';
+        socialFloat.style.transition = 'opacity 0.5s';
+      }
+    }
+
+    window.addEventListener('scroll', checkFade, { passive: true });
+    window.addEventListener('resize', checkFade);
+    checkFade();
+   });
+
+   const viewBtn = document.getElementById('viewFullGalleryBtn');
+    const lessBtn = document.getElementById('showLessGalleryBtn');
+    const gallery = document.getElementById('gallery-content');
+    const initialMaxHeight = '1000px';
+
+   viewBtn.addEventListener('click', function () {
+    gallery.style.maxHeight = '5000px';
+    viewBtn.style.display = 'none';
+    lessBtn.style.display = 'inline-block';
+    });
+
+    lessBtn.addEventListener('click', function () {
+    gallery.style.maxHeight = initialMaxHeight;
+    lessBtn.style.display = 'none';
+    viewBtn.style.display = 'inline-block';
+    gallery.scrollIntoView({ behavior: 'smooth' });
+    });
+   
+    document.querySelectorAll('.swiper-fade-mask').forEach(function(maskDiv) {
+    const swiperEl = maskDiv.querySelector('.swiper');
+    if (!swiperEl) return;
+    const swiperInstance = swiperEl.swiper;
+    function updateFade() {
+      if (!swiperInstance) return;
+      let slidesPerView = swiperInstance.params.slidesPerView;
+      if (typeof slidesPerView === 'string' && slidesPerView === 'auto') slidesPerView = 1;
+      if (swiperInstance.slides.length <= slidesPerView) {
+        maskDiv.classList.add('no-fade');
+      } else {
+        maskDiv.classList.remove('no-fade');
+      }
+    }
+    if (swiperInstance) {
+      swiperInstance.on('resize', updateFade);
+      swiperInstance.on('init', updateFade);
+      updateFade();
+    }
+    });
+
+
+    document.getElementById('viewFullGalleryBtn').addEventListener('click', function () {
+    var gallery = document.getElementById('gallery-content');
+    gallery.style.maxHeight = '5000px'; // Large enough for all content
+    this.style.display = 'none';
+   });
